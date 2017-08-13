@@ -133,7 +133,7 @@ static void print_grid(grid_crt grid)
 			if (j % 3 == 0)
 				printf("|");
 
-			if(grid[i][j] != 0)
+			if (grid[i][j] != 0)
 				printf("%d", grid[i][j]);
 			else
 				printf(" ");
@@ -154,7 +154,7 @@ int main(void)
 
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; ++j)
-			if(!scanf("%d", &grid[i][j])) {
+			if (!scanf("%d", &grid[i][j])) {
 				printf("Error!\n");
 				return -1;
 			}
