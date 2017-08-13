@@ -154,7 +154,7 @@ int main(void)
 
 	for (int i = 0; i < N; ++i) {
 		for (int j = 0; j < N; ++j)
-			if (!scanf("%d", &grid[i][j])) {
+			if (!scanf("%1d", &grid[i][j])) {
 				printf("Error!\n");
 				return -1;
 			}
