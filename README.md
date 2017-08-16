@@ -17,7 +17,7 @@ cat puzzle | ./solve
 
 ## Example
 ```
-$ cat puzzle | ./solve    
+$ cat puzzle | ./solve
 ORIGINAL
 ---------------------
 |      |  3 7 |6    |
