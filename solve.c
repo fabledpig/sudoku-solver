@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #define N 9
 #define n 3
@@ -160,14 +161,22 @@ int main(void)
 			}
 	}
 
+	clock_t begin, end;
+
 	printf("ORIGINAL\n");
 	print_grid(grid);
 	printf("\n");
 
+	begin = clock();
+
 	solve(grid);
+
+	end = clock();
 
 	printf("SOLVED\n");
 	print_grid(grid);
+
+	printf("Took %fs to solve.\n", (double)(end - begin) / CLOCKS_PER_SEC);
 
 	return 0;
 }
